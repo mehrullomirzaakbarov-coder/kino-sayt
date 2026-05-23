@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kino Sirlarini Och</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="container header-inner">
+            <div class="brand">
+                <span class="brand-mark">K</span>
+                <div>
+                    <h1>Kino Sirlarini Och</h1>
+                    <p>Raqam kiriting, oltin kino paydo bo‘lsin.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-copy">
+                <span class="eyebrow">Siz tanlagan kinoni ko‘ring</span>
+                <h1>Raqam kirit — ekran ochilsin</h1>
+                <p>1 dan 6 gacha raqam yozing va har bir raqam bilan maxsus kino kashf eting. Bu oddiy sayt emas — bu kino sirlar maydoni.</p>
+                <div class="viewer-inputs">
+                    <input id="movieNumberInput" type="number" min="1" max="6" placeholder="1 dan 6 gacha raqam">
+                    <button id="revealBtn" class="btn btn-primary">Kashf et</button>
+                </div>
+                <div class="viewer-note">Raqam kiritib, o‘zingizga mos filmni oching. Har bir tanlov noyob.</div>
+            </div>
+            <div class="hero-card">
+                <div class="movie-preview reveal-card">
+                    <span id="revealBadge">Sirli kino</span>
+                    <h3 id="revealTitle">Raqam kiriting</h3>
+                    <p id="revealDescription">Javob kutilyapti. 1-6 raqamlar ichidan bittasini tanlang.</p>
+                    <div class="modal-meta reveal-meta">
+                        <span id="revealGenre">Janr: —</span>
+                        <span id="revealYear">Yil: —</span>
+                        <span id="revealRating">Reyting: —</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="movies-section" id="movies">
+            <div class="container section-header">
+                <div>
+                    <span class="eyebrow">Raqamlar Katalogi</span>
+                    <h2>Qaysi raqam qayerga olib boradi?</h2>
+                </div>
+                <div class="search-area">
+                    <p>1-6 raqamlar bilan har bir filmni tezkor oching.</p>
+                </div>
+            </div>
+
+            <div class="container movie-grid" id="movieGrid"></div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container section-header">
+                <span class="eyebrow">Nima uchun bu ajoyib?</span>
+                <h2>Oddiy qidiruv emas, kino portal</h2>
+                <p>Har bir raqam o‘ziga xos filmga olib boradi. Bu yerda nafaqat film, balki ahmoqona emas, chiroyli interfeys va sirli atmosfera ham bor.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Kino Sirlarini Och. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
